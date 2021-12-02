@@ -1,0 +1,16 @@
+<button 
+[ngStyle]="{'color': color, 'border-color': color}" 
+class="btn-form-toggle"
+(click)="onClick()"
+>
+
+
+<fa-icon *ngIf="open === 'false'"
+    [icon]="faTimes"
+></fa-icon>
+
+<fa-icon *ngIf="open === 'true'"
+    [icon]="faPlus"
+></fa-icon>
+
+</button>
